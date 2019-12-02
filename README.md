@@ -70,7 +70,7 @@ If you encounter invalid user access errors, try enabling the ```Force Root``` o
 The process priority/niceness can be set in the config and may avoid samba stalling other processes on low end devices.
 ```
 config procd 'extra'
-	option samba_nice '-10'
+	option samba_nice '3'
  ```
 
 #### Compatible Filesystems
