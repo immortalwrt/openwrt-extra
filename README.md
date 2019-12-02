@@ -4,10 +4,12 @@
 
 This is an [OpenWrt](https://openwrt.org/) package feed containing [**Samba 4.9.x**](https://www.samba.org/), [**SoftetherVPN 5.x (dev/git)**](https://github.com/SoftEtherVPN/SoftEtherVPN) and [Cifsd](https://github.com/cifsd-team/cifsd) servers.
 
+The 'samba4' package is the basic fileserver, while 'samba4-suite-full' is the complete samba4 suite, including all tools to manage, join domains and run in AD-DC mode, winbindd is also included there. The main difference between those two packages, is size, so 'samba4' needs around 6.5 MB and 'samba4-suite-full' needs 12 MB.
+
 Ready build ipk's for *Snapshots* based firmware, can be downloaded from here: [snapshots/packages](https://downloads.openwrt.org/snapshots/packages/).
 
 #### Note
-Samba [VFS modules](https://wiki.samba.org/index.php/Virtual_File_System_Modules) are supported and can be added via luci.\
+Samba [VFS modules](https://wiki.samba.org/index.php/Virtual_File_System_Modules) are supported and can be added via luci.
 
 The size of the Samba4-server/libs.ipk and deps are around 6.5 MB, so you need a >8MB NVRAM device to fit the final image or setup a [ext-root](https://openwrt.org/docs/guide-user/additional-software/extroot_configuration) *(recommend for ad-dc operation)*.
 
